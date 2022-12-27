@@ -106,10 +106,13 @@ footer div .fa-stack{
 }
 @media (max-width:400px) {
     html{
-        font-size: 14px;
+        font-size: 13px;
     }
     section p:first-child{
         font-size: 2rem;
+    }
+    .image{
+        width: 100%;
     }
     button{
         width: 70%;
