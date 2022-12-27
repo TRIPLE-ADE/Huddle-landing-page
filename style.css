@@ -114,4 +114,8 @@ footer div .fa-stack{
     button{
         width: 70%;
     }
+    i{
+    margin-top: -4px;
+    font-size: 1rem !important;
+}
 }
