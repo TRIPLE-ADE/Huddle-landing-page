@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --soft-magenta:hsl(300, 69%, 71%);
+}
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    color: #fff;
+
+}
+header, main{
+    width: 90%;
+    margin: auto;
+}
+header a img{
+    padding: 30px 0;
+}
+main{
+    display: flex;
+    gap: 50px;
+}
+.image{
+    width: 60%;
+}
+section{
+    width: 40%;
+}
+section p:first-child{
+  
+font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 50px;
+    
+}
+section p:nth-child(2){
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+button{
+    width: 150px;
+    line-height: 3;
+    border-radius: 20px;
+    border: none;
+}
+a:hover .fa-stack{
+    border:1px solid var(--soft-magenta) ;    
+}
+a:hover i{
+    color: var(--soft-magenta)!important;
+}
+a:hover button{
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+main > section > img{
+    width: 100%;
+}
+footer div{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+i{
+    margin-top: -7px;
+    font-size: 1rem !important;
+}
+footer div .fa-stack{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.attribution { font-size: 11px; text-align: center; margin: 30px 0 0; }
+.attribution a { color: hsl(240, 7%, 11%); }
+
+@media (max-width:900px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    section{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    section p:first-child{
+        margin-top: 0;
+    }
+    footer div{
+        justify-content: center;
+        margin: 70px auto 0;
+    }
+}
+@media (max-width:400px) {
+    html{
+        font-size: 14px;
+    }
+    section p:first-child{
+        font-size: 2rem;
+    }
+    button{
+        width: 70%;
+    }
+}
